@@ -1,0 +1,21 @@
+version: 1
+validation: sovereign
+accounts: 
+- name: alice
+  coins:
+  - 200000000stake
+  mnemonic: label they thank fitness pond noble honey friend another medal hedgehog door awake shoot walk stereo bubble attend tired front goat entire spot quick
+- name: admin
+  coins:
+  - 200000000stake
+  address: cosmos1uhznv7uzyjq84s3q056suc8pkme85lkvp8vyha
+client:
+  openapi:
+    path: docs/static/openapi.yml
+faucet:
+  name: alice
+  coins:
+  - 100000stake
+validators:
+- name: alice
+  bonded: 100000000stake
